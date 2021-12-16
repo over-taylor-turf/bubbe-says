@@ -1,7 +1,9 @@
 # Project Proposal
 
 **Title**: *My Bubbe Says*
+
 **Concept**: *My Bubbe Says* is a modern archive of American Yiddish words and phrases. 
+
 **User Story**: The goal is to preserve cultural vocabulary for individuals who grew up in the American Jewish community, or for those who just watched a lot of *Seinfeld* at a young age! For Jewish Americans, the official teachers of the Yiddish language are often our grandmothers, *bubbes*, or grandfathers, *zaides*. Thus, *My Bubbe Says* asks its users, "What does your *bubbe* say?" and "What did she mean when she said that?" in order to construct communal knowledge of words that might be otherwise lost or forgotten. Currently, there are not any modern resources online for this type of archive. Many Yiddish translators and dictionaries require a knowledge of the Hebrew alphabet, or a knowledge of phonetic Yiddish spelling structures, or delve into Germanic influence on the language... For American Jews, all we really want, is a place to remember and keep the words and phrases we grew up with. *My Bubbe Says*, "it's a great idea!"
 
 
