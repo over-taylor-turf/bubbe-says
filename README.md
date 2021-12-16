@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Project Proposal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Title**: *My Bubbe Says*
+**Concept**: *My Bubbe Says* is a modern archive of American Yiddish words and phrases. 
+**User Story**: The goal is to preserve cultural vocabulary for individuals who grew up in the American Jewish community, or for those who just watched a lot of *Seinfeld* at a young age! For Jewish Americans, the official teachers of the Yiddish language are often our grandmothers, *bubbes*, or grandfathers, *zaides*. Thus, *My Bubbe Says* asks its users, "What does your *bubbe* say?" and "What did she mean when she said that?" in order to construct communal knowledge of words that might be otherwise lost or forgotten. Currently, there are not any modern resources online for this type of archive. Many Yiddish translators and dictionaries require a knowledge of the Hebrew alphabet, or a knowledge of phonetic Yiddish spelling structures, or delve into Germanic influence on the language... For American Jews, all we really want, is a place to remember and keep the words and phrases we grew up with. *My Bubbe Says*, "it's a great idea!"
 
-## Available Scripts
 
-In the project directory, you can run:
+## Site Structure
 
-### `npm start`
+**Landing Page** will showcase a randomized word from the database. This word will automatically refresh every 5 seconds or so. The word will display along with the definition, example sentence, and phonetic spelling. Underneath, upon scroll, a short blurb explaining the concept will appear. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**About Page** will showcase Taylor... and her grandmother! 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Form: Submit a Word Page** a simple form for users to submit words that their *bubbes* say/said. The form will require a user to submit the word, a definition, an example sentence, and their *bubbe's* name. The *bubbe* name is in lieu of a username, email, or individual's name and is a fun way to credit *bubbes*  around the world with their most-used Yiddish words. 
 
-### `npm test`
+**Search: Find a Word Page** a search bar will allow users to search for a Yiddish word and find it's definition, pronunciation (phonetic spelling), and an example sentence. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Dictionary: See All Words Page** a "view all" page will allow users to browse all Yiddish words currently in the *My Bubbe Says* database.  
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Important Functionality
+- Timed Slideshow, of randomized words from the database. (Landing Page), Post-MVP
+- Form, for a user to submit a word to be displayed, after approval, on the site. (Form Page), MVP
+- Search Bar, for a user to search for words on the site (Search Page), MVP
+- Nav Bar, for a user to navigate between pages (All Pages), Post-MVP
+- Django Database, to store all words (Back End), MVP
+- Admin Control, to control which words are approved or not (Back End), Post-MVP
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Plan
+- Front-End: HTML, CSS, JavaScript, React App 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Back-end: Django, Python API 
+    - Models: Words, User* 
 
-### `npm run eject`
+*Note there will only be one user, which is me, Taylor, the Admin. No other users allowed.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Example word model in the *My Bubbe Says* backend database. 
+```py
+{
+  "id": 1,
+  "word": "verklempt",
+  "alternate_spelling": ["verklempt"]
+  "phonetic_spelling": "fur-clem-tuh",
+  "definition": "overwhelmed",
+  "example_sentence": "My bubbe was a little verklempt when she heard the news: her only daughter was to marry a doctor.",
+  "bubbe_author": "Gussie Ratner",
+  "approved": true 
+}
+{
+  "id": 2,
+  "word": "zadie",
+  "alternate_spelling": ["zadie", "zayde", "zaydie", "zaydeh", "zaide"]
+  "phonetic_spelling": "zay-dee",
+  "definition": "grandfather",
+  "example_sentence": "Even though Zadie can't hear very well anymore, somehow he still knows when I'm trying to steal a bite of his precious gefilte fish out of the jar.",
+  "bubbe_author": "Gussie Ratner",
+  "approved": true 
+}
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Wireframes 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Landing Page and Nav Bar [here](https://res.cloudinary.com/overturf/image/upload/v1639677167/landingpageandnavbar.heic). 
+- 'Submit a Word' and 'Search a Word' [here](https://res.cloudinary.com/overturf/image/upload/v1639677151/submitandsearchpages.heic). 
