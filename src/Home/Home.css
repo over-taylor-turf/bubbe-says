@@ -1,0 +1,13 @@
+.container {
+    margin: 0px auto;
+    padding: 100px 10px 0px 10px;
+}
+
+.title {
+    text-align: center;
+    font-size: 5vh;
+}
+
+.bold-text {
+    font-weight: 700;
+}
