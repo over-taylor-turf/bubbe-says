@@ -12,10 +12,11 @@ function Search() {
         <>
         <Menu />
 
-        <h1>Search for a Yiddish word.</h1>
-        <h2>If you're having trouble finding what you want, browse in the Dictionary section.</h2>
+        <div className ="search-wrapper">
+        <h1>My <em>bubbe</em> says...</h1>
 
         <FormControlled />
+        </div>
 
         <Footer />
 

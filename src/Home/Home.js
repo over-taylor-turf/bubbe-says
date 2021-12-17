@@ -9,13 +9,11 @@ import Menu from '../NavBar/NavBar';
 function Home() {
 
     // Random Number Variables
-    const randomword = Math.floor(Math.random() * 5)
+    const randomword = Math.floor(Math.random() * 10)
 
     return (
         <>
         <header>
-
-            {/* <p className="my-bubbe-says-hebrew">זאָגט מײַן באָבע</p> */}
 
             <Menu/>
 

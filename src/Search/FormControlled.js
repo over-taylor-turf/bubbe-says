@@ -32,17 +32,19 @@ const FormControlled = (props) => {
           type="text"
           className="form-control"
           name="word"
-          placeholder="Verklempt"
+          placeholder="verklempt"
         />
 
         <button onClick={handleSubmit}
                 className="search-button">
         Search</button>
-
-        <div>{displayState ? displayState[0].word : ''}</div>
-        <div>{displayState ? displayState[0].phonetic_spelling : ''}</div>
-        <div>{displayState ? displayState[0].definition : ''}</div>
-        <div><em>{displayState ? displayState[0].example_sentence : ''}</em></div>
+        
+        <br/>
+        <br/>
+        <div><i class="fas fa-pencil-alt"></i>&nbsp;{displayState ? displayState[0].word : 'If you are having trouble finding what you want, browse in the Dictionary section.'}</div>
+        <div>&nbsp;&nbsp;{displayState ? displayState[0].phonetic_spelling : ''}</div>
+        <div>&nbsp;&nbsp;{displayState ? displayState[0].definition : ''}</div>
+        <div>&nbsp;&nbsp;<em>{displayState ? displayState[0].example_sentence : ''}</em></div>
 
     </div>
   );

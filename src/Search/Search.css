@@ -19,3 +19,12 @@
     padding: 10px;
     border-radius: 10px;
 }
+
+.search-wrapper {
+  position: absolute;
+  margin: 0 auto;
+  padding: 15px;
+  top: 20%;
+  /* -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+}
