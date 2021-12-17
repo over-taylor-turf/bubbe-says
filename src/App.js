@@ -4,7 +4,7 @@ import './App.css';
 
 import Home from './Home/Home';
 import About from './About/About';
-import Form from './Form/Form';
+import Search from './Search/Search';
 import All from './All/All';
 import Submit from './Submit/Submit';
 
@@ -17,7 +17,7 @@ function App() {
 
             <Route path='/about' exact component={About} />
 
-            <Route path='/form' exact component={Form} />
+            <Route path='/search' exact component={Search} />
 
             <Route path='/all' exact component={All} />
 

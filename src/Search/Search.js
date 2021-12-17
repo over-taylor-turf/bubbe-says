@@ -2,18 +2,16 @@ import React from 'react';
 // import { Link } from "react-router-dom";
 import FormControlled from './FormControlled';
 import '../App.css';
-import './Form.css';
-import SearchList from './SearchList';
+import './Search.css';
 
-function Form() {
+function Search() {
 
     return (
         <>
-            <h1>Find a Yiddish word.</h1>
+        <h1>Search for a Yiddish word.</h1>
+        <h2>If you're having trouble finding what you want, browse in the Dictionary section.</h2>
 
         <FormControlled />
-
-        {/* <SearchList /> */}
 
         </>
 
@@ -21,4 +19,4 @@ function Form() {
     }
     
 
-export default Form;
+export default Search;
