@@ -1,0 +1,9 @@
+input, textarea {
+    padding: 2px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+textarea:hover, input:hover {
+    background-color: goldenrod;
+}
