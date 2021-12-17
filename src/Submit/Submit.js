@@ -2,6 +2,8 @@ import React from 'react';
 // import { Link } from "react-router-dom";
 import '../App.css';
 import './Submit.css';
+import Menu from '../NavBar/NavBar';
+import Footer from '../Footer/Footer';
 
 function Submit() {
 
@@ -23,6 +25,7 @@ function Submit() {
 
     return (
         <>
+            <Menu/>
             <form id="myForm">
                 
                 <label for="email">Your Email Address</label>
@@ -47,6 +50,7 @@ function Submit() {
             </form>
             <button onClick={() => {SubForm()}}>Submit</button>
 
+            <Footer/>
         </>
 
         );
