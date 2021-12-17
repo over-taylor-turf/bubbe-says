@@ -6,6 +6,7 @@ import Home from './Home/Home';
 import About from './About/About';
 import Form from './Form/Form';
 import All from './All/All';
+import Submit from './Submit/Submit';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
             <Route path='/form' exact component={Form} />
 
             <Route path='/all' exact component={All} />
+
+            <Route path='/submit' exact component={Submit} />
 
             <Redirect to='/' />
 

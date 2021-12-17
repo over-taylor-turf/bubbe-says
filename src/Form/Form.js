@@ -1,12 +1,20 @@
 import React from 'react';
 // import { Link } from "react-router-dom";
+import FormControlled from './FormControlled';
 import '../App.css';
+import './Form.css';
+import SearchList from './SearchList';
 
 function Form() {
 
     return (
         <>
-            <h1>This page will display a form to submit a word to the archives.</h1>
+            <h1>Find a Yiddish word.</h1>
+
+        <FormControlled />
+
+        {/* <SearchList /> */}
+
         </>
 
         );

@@ -5,7 +5,8 @@
 
 .title {
     text-align: center;
-    font-size: 5vh;
+    font-size: min(max(30px, 5vw), 100px);
+
 }
 
 .bold-text {
