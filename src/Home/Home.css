@@ -4,12 +4,14 @@
 }
 
 .title {
-    text-align: center;
-    font-size: min(max(30px, 5vw), 100px);
+    text-align: left;
+    margin-left: 5px;
+    font-size: min(max(25px, 5vw), 100px);
 }
 
 .bold-text {
     font-weight: 700;
+    color: #98817D;
 }
 
 #nanny {
@@ -28,6 +30,7 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     text-align: right;
+    box-shadow: 2px 2px 5px #888888;
 }
 
 #main-text {
