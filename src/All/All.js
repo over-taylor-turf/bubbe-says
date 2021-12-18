@@ -11,7 +11,7 @@ function All() {
 const mapped = yiddishword.map((individualword, index) => {
     return (
         <div key={individualword.id}>
-        <p><strong>{individualword.word.toUpperCase()}</strong></p>
+        <p className='key-word'><strong>{individualword.word.toUpperCase()}</strong></p>
         <p>[{individualword.phonetic_spelling}]</p>
         <p>{individualword.definition}</p>
         <p><em>{individualword.example_sentence}</em></p>
@@ -24,8 +24,9 @@ const mapped = yiddishword.map((individualword, index) => {
         <>
             <Menu/>
             <div className="allwords-wrapper">
-            <h1>My Bubbe Says...</h1>
-            <p>A Complete List</p>
+            <h1 className='dictionary-title first'>My Bubbe Says...</h1>
+            <h2 className='dictionary-title second'>ווערטערבוך</h2>
+            <h3 className='dictionary-title third'>A Complete List</h3>
             <br />
             <h5>{mapped}</h5>
             </div>
