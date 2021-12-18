@@ -1,0 +1,39 @@
+#nanny3 {
+    height: 30vw;
+    max-height: 400px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+  }
+
+.about-intro {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: min(max(30px, 5vw), 50px);
+}
+
+.about-intro2 {
+    text-align: center;
+    font-size: min(max(20px, 4vw), 40px);
+}
+
+.about-main {
+    margin-top: 10px !important;
+    margin: 0 auto;
+    width: 90vw;
+    font-size: min(max(10px, 3vw), 20px);
+}
+
+.contact-section a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    padding: 7.5px;
+}
+
+.contact-section a:hover {
+    color: #C4C9B0;
+}

@@ -41,7 +41,7 @@ const FormControlled = (props) => {
         
         <br/>
         <br/>
-        <div><i class="fas fa-pencil-alt"></i>&nbsp;{displayState ? displayState[0].word : 'If you are having trouble finding what you want, browse in the Dictionary section.'}</div>
+        <div><i class="fas fa-pencil-alt"></i>&nbsp;{displayState ? displayState[0].word : 'If you are having trouble finding what you want, stop kvetching and schlep yourself over to the Dictionary section.'}</div>
         <div>&nbsp;&nbsp;{displayState ? displayState[0].phonetic_spelling : ''}</div>
         <div>&nbsp;&nbsp;{displayState ? displayState[0].definition : ''}</div>
         <div>&nbsp;&nbsp;<em>{displayState ? displayState[0].example_sentence : ''}</em></div>

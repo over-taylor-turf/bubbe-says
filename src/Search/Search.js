@@ -12,8 +12,10 @@ function Search() {
         <>
         <Menu />
 
+        <img id='nanny2' src='https://res.cloudinary.com/overturf/image/upload/v1639858082/IMG-5150_iyyoy9.jpg' alt='mother and daughter in black and white'/>
+
         <div className ="search-wrapper">
-        <h1>My <em>bubbe</em> says...</h1>
+        <h1>My bubbe says...</h1>
 
         <FormControlled />
         </div>

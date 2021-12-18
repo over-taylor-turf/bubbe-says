@@ -1,3 +1,11 @@
+/* Hex Codes */
+/* #98817D Grey */
+/* #C1C5AE Green */
+/* #C4C9B0 Green */
+/* #69514D Dark Grey */
+/* #6A3729 Dark Brown */
+/* #B0826C Light Brown */
+
 .form-control {
     position: relative;
     font-size: 16px;
@@ -9,10 +17,6 @@
     box-sizing: border-box;
   }
 
-.form-control:focus {
-    z-index: 2;
-  }
-
 .search-button {
     background-color: black;
     color: white;
@@ -21,10 +25,29 @@
 }
 
 .search-wrapper {
-  position: absolute;
+  /* position: absolute; */
   margin: 0 auto;
   padding: 15px;
-  top: 20%;
+  /* top: 20%; */
   /* -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); */
+}
+
+.form-control:hover {
+  background-color: #C1C5AE;
+  color: black;
+}
+
+.search-button:hover {
+  background-color: #69514D;
+}
+
+#nanny2 {
+  height: 40vw;
+  max-height: 300px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
 }

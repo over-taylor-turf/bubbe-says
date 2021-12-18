@@ -52,7 +52,7 @@ export const yiddishword = [
         word: "kvetch",
         phonetic_spelling: "kuh-VECH",
         definition: "complain",
-        example_sentence: "If there were a competition for kvetching, he would certainly come in first place.",
+        example_sentence: "If there were a competition for kvetching, he would certainly come in first place. And, if he came in second, he'd probably kvetch about it.",
         bubbe: "Gussie Ratner"
     },
     {
