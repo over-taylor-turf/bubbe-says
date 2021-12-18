@@ -21,10 +21,16 @@ function Home() {
         <div className="container">
             <h1 className='title'>My bubbe says <strong className="bold-text">{yiddishword[randomword].word}</strong>.</h1>
             <br/>
+            <div id='grid-container'>
+            <img id='nanny' src='https://res.cloudinary.com/overturf/image/upload/v1639786175/IMG-5145_1_vks3ih.jpg' alt='older woman in teal'/>
+            <div id='main-text'>
             <h2>[{yiddishword[randomword].phonetic_spelling}]</h2>
+            <br />
             <h2>{yiddishword[randomword].definition}</h2>
+            <br />
             <h3><em>{yiddishword[randomword].example_sentence}</em></h3>
-
+            </div>
+            </div>
         </div>
         
         <Footer/>

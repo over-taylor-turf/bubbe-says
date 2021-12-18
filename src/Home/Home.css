@@ -12,3 +12,27 @@
 .bold-text {
     font-weight: 700;
 }
+
+#nanny {
+    height: 50vw;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+#nanny {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-align: right;
+}
+
+#main-text {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    text-align: left;
+}
