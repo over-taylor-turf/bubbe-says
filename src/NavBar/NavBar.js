@@ -49,7 +49,7 @@ const Menu = ( ) => {
 
     return (
         <div className="header-container">
-        <p className="my-bubbe-says-hebrew">זאָגט מײַן באָבע</p> 
+        <Link to='/'><p className="my-bubbe-says-hebrew">זאָגט מײַן באָבע</p></Link>
         <div className="hamburger-menu">
 
                   <span id="icon" onClick={() => {handleClick()}}>

@@ -31,9 +31,14 @@
     text-decoration: none;
     color: black;
     font-weight: 700;
-    padding: 7.5px;
+    padding: 10px;
+    font-size: min(max(15px, 3.5vw), 25px);
 }
 
 .contact-section a:hover {
     color: #C4C9B0;
+}
+
+.contact-section {
+    margin-bottom: 8.5vw;
 }
