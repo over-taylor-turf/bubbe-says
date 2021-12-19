@@ -2,8 +2,34 @@ input, textarea {
     padding: 2px;
     margin: 5px;
     border: 1px solid black;
+    width: 90vw;
 }
 
 textarea:hover, input:hover {
-    background-color: goldenrod;
+    background-color: #C1C5AE;
 }
+
+.submit-title {
+    font-size: 4vh;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+#myForm {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+button:hover {
+    background-color: #69514D;
+  }
