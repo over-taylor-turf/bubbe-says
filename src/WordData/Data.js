@@ -28,7 +28,7 @@ export const yiddishword = [
         word: "schmatte",
         phonetic_spelling: "SHMAH-tuh",
         definition: "rag, tattered cloth, beloved blanket",
-        example_sentence: "Every since I started working from home, I don't even attempt to get out of my pajamas, it looks like I'm wearing a big schmatte.",
+        example_sentence: "Ever since I started working from home, I don't even attempt to get out of my pajamas, it looks like I'm wearing a big schmatte.",
         bubbe: "Gussie Ratner"
     },
     {

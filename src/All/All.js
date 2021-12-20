@@ -13,8 +13,8 @@ const mapped = yiddishword.map((individualword, index) => {
         <div key={individualword.id}>
         <p className='key-word'><strong>{individualword.word.toUpperCase()}</strong></p>
         <p className='phonetic-spelling'>[{individualword.phonetic_spelling}]</p>
-        <p>{individualword.definition}</p>
-        <p><em>{individualword.example_sentence}</em></p>
+        <p className='definition'>{individualword.definition}</p>
+        <p className='example'><em>{individualword.example_sentence}</em></p>
         <br />
         </div>
     );

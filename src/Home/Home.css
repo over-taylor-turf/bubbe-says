@@ -38,3 +38,21 @@
     grid-row: 1 / 2;
     text-align: left;
 }
+
+@media only screen and (min-width: 500px) { 
+
+    #nanny {
+        height: 55vh;
+        margin: 0px auto;
+    }
+  
+    #main-text {
+        font-size: min(max(10px, 3vw), 30px);
+    }
+
+    .container {
+        margin: 0px auto;
+        padding: 75px 10px 0px 10px;
+    }
+
+  }

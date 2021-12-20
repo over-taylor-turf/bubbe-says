@@ -39,8 +39,6 @@ const FormControlled = (props) => {
                 className="search-button">
         Search</button>
         
-        <br/>
-        <br/>
         <div><i class="fas fa-pencil-alt"></i>&nbsp;{displayState ? displayState[0].word : 'If you are having trouble finding what you want, stop kvetching and schlep yourself over to the Dictionary section.'}</div>
         <div>&nbsp;&nbsp;{displayState ? displayState[0].phonetic_spelling : ''}</div>
         <div>&nbsp;&nbsp;{displayState ? displayState[0].definition : ''}</div>

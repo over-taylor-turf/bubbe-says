@@ -16,6 +16,11 @@ textarea:hover, input:hover {
     margin-top: 10vh;
 }
 
+.submit-subtitle {
+    font-size: 2.5vh;
+    padding: 0 5px 0 5px;
+}
+
 #myForm {
     margin-left: 10px;
     margin-bottom: 10px;
@@ -33,3 +38,24 @@ button {
 button:hover {
     background-color: #69514D;
   }
+
+  @media only screen and (min-width: 750px) { 
+
+    input, textarea {
+        padding: 2px;
+        margin: 5px;
+        border: 1px solid black;
+        width: 60vw;
+    }
+
+    .submit-title, .submit-subtitle {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .submit-title {
+        padding-bottom: 10px;
+    }
+
+
+}
