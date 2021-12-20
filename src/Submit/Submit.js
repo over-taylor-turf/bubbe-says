@@ -1,40 +1,75 @@
 import React from 'react';
-// import { useEffect } from 'react';
+import { useEffect, useState } from "react";
 import '../App.css';
 import './Submit.css';
 import Menu from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
-// const { GoogleSpreadsheet } = require('google-spreadsheet');
-// const creds = require('./client_secret.json');
+const { GoogleSpreadsheet } = require('google-spreadsheet');
+const creds = require('../client_secret.json');
+let doc = {};
 
 function Submit() {
+    const [email, setEmail] = useState("");
+    const [word, setWord] = useState("");
+    const [definition, setDefinition] = useState("");
+    const [example, setExample] = useState("");
+    const [bubbe, setBubbe] = useState("");
+    const [buttonText, setButtonText] = useState('Submit')
 
-    // const SubForm = () => {
-    //     fetch("https://api.apispreadsheets.com/data/POU9eZNdrU0j2Xc1/", {
-    //         method: "POST",
-    //         body: JSON.stringify({"data": {"email":"","word":"","definition":"","example":"","bubbe":""}}),
-    //     }).then(res =>{
-    //         if (res.status === 201){
-    //             // SUCCESS
-    //             alert('Thank you for submitting a word to My Bubbe Says!')
-    //         }
-    //         else{
-    //             // ERROR
-    //             alert('There was an error. Please try again!')
-    //         }
-    //     })
-    // }
 
-  // const makeInitialCall = async () => {
-  //   let doc = new GoogleSpreadsheet('184Y9hyAfhOfMntOM5hVK8zd0MbZt9PkIgL9PKs3adkk')
-        // await doc.useServiceAccountAuth(creds)
-        // await doc.loadInfo()
-        // console.log(doc)
-  // }
+  const makeInitialCall = async () => {
+    doc = new GoogleSpreadsheet('184Y9hyAfhOfMntOM5hVK8zd0MbZt9PkIgL9PKs3adkk')
+        await doc.useServiceAccountAuth(creds)
+        await doc.loadInfo()
+        let dataRows = await doc.sheetsByIndex[0].getRows();
+        // console.log(doc.sheetsByIndex[0]);
+        // console.log(dataRows);
+  }
 
-  // useEffect(() => {
-  //   makeInitialCall()
-  // }, [])
+  useEffect(() => {
+    makeInitialCall()
+  }, [])
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleWordChange = (e) => {
+    setWord(e.target.value);
+  };
+
+  const handleDefinitionChange = (e) => {
+    setDefinition(e.target.value);
+  };
+
+  const handleExampleChange = (e) => {
+    setExample(e.target.value);
+  };
+
+  const handleBubbeChange = (e) => {
+    setBubbe(e.target.value);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    setButtonText('Thank you!')
+    let newRow = {
+      email: email,
+      word: word,
+      definition: definition,
+      example: example,
+      bubbe: bubbe
+    };
+
+    let sheet = await doc.sheetsByIndex[0];
+    sheet.addRow(newRow);
+    setEmail('')
+    setWord('')
+    setDefinition('')
+    setExample('')
+    setBubbe('')
+  };
+
 
     return (
         <>
@@ -47,27 +82,47 @@ function Submit() {
             <form id="myForm">
                 
                 <label for="email">Your Email Address</label><br/>
-                <input type="email" name="email" placeholder="bubbe@bubbe.com"/>
+                <input  type="text" 
+                        value={email}
+                        onChange={handleEmailChange}
+                        name="email" 
+                        placeholder="bubbe@bubbe.com"/>
                 <br/>
 
                 <label for="word">Proposed Word</label><br/>
-                <input type="text" name="word" placeholder="schvitz"/>
+                <input  type="text"
+                        value={word} 
+                        onChange={handleWordChange}
+                        name="word" 
+                        placeholder="schvitz"/>
                 <br/>
 
                 <label for="definition">Definition</label><br/>
-                <textarea type="text" name="definition" placeholder="Sweating profusely."/>
+                <textarea type="text" 
+                          name="definition" 
+                          value={definition} 
+                          onChange={handleDefinitionChange}
+                          placeholder="Sweating profusely."/>
                 <br/>
 
                 <label for="example">Example Sentence</label><br/>
-                <textarea type="text" name="example" placeholder="I was schvitzing so bad it looked like I dumped a bucket of water over my head."/>
+                <textarea 
+                            type="text" 
+                            name="example"
+                            value={example}
+                            onChange={handleExampleChange} 
+                            placeholder="I was schvitzing so bad it looked like I dumped a bucket of water over my head."/>
                 <br/>
 
                 <label for="bubbe">Your Bubbe's Name</label><br/>
-                <input type="text" name="bubbe" placeholder="Bubbe Gussie"/>
+                <input type="text" 
+                       name="bubbe" 
+                       value={bubbe}
+                       onChange={handleBubbeChange}
+                       placeholder="Bubbe Gussie"/>
                 <br/>
             </form>
-            {/* <button onClick={() => {SubForm()}}>Submit</button> */}
-            <button>Submit</button>
+            <button onClick={handleSubmit}>{buttonText}</button>
             </div>
 
             <Footer/>
