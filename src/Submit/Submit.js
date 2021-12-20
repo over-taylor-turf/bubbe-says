@@ -1,27 +1,40 @@
 import React from 'react';
-// import { Link } from "react-router-dom";
+// import { useEffect } from 'react';
 import '../App.css';
 import './Submit.css';
 import Menu from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
+// const { GoogleSpreadsheet } = require('google-spreadsheet');
+// const creds = require('./client_secret.json');
 
 function Submit() {
 
-    const SubForm = () => {
-        fetch("https://api.apispreadsheets.com/data/POU9eZNdrU0j2Xc1/", {
-            method: "POST",
-            body: JSON.stringify({"data": {"email":"","word":"","definition":"","example":"","bubbe":""}}),
-        }).then(res =>{
-            if (res.status === 201){
-                // SUCCESS
-                alert('Thank you for submitting a word to My Bubbe Says!')
-            }
-            else{
-                // ERROR
-                alert('There was an error. Please try again!')
-            }
-        })
-    }
+    // const SubForm = () => {
+    //     fetch("https://api.apispreadsheets.com/data/POU9eZNdrU0j2Xc1/", {
+    //         method: "POST",
+    //         body: JSON.stringify({"data": {"email":"","word":"","definition":"","example":"","bubbe":""}}),
+    //     }).then(res =>{
+    //         if (res.status === 201){
+    //             // SUCCESS
+    //             alert('Thank you for submitting a word to My Bubbe Says!')
+    //         }
+    //         else{
+    //             // ERROR
+    //             alert('There was an error. Please try again!')
+    //         }
+    //     })
+    // }
+
+  // const makeInitialCall = async () => {
+  //   let doc = new GoogleSpreadsheet('184Y9hyAfhOfMntOM5hVK8zd0MbZt9PkIgL9PKs3adkk')
+        // await doc.useServiceAccountAuth(creds)
+        // await doc.loadInfo()
+        // console.log(doc)
+  // }
+
+  // useEffect(() => {
+  //   makeInitialCall()
+  // }, [])
 
     return (
         <>
@@ -53,7 +66,8 @@ function Submit() {
                 <input type="text" name="bubbe" placeholder="Bubbe Gussie"/>
                 <br/>
             </form>
-            <button onClick={() => {SubForm()}}>Submit</button>
+            {/* <button onClick={() => {SubForm()}}>Submit</button> */}
+            <button>Submit</button>
             </div>
 
             <Footer/>

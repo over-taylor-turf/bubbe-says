@@ -13,7 +13,7 @@ function Search() {
         <Menu />
 
         <div className='grid-container'>
-        <img id='nanny2' src='https://res.cloudinary.com/overturf/image/upload/v1639858082/IMG-5150_iyyoy9.jpg' alt='mother and daughter in black and white'/>
+        <img id='nanny2' src='https://res.cloudinary.com/overturf/image/upload/v1640018436/IMG-5149_bpmcpd.jpg' alt='mother and daughter in black and white'/>
 
         <div className="search-wrapper">
         <h1 className="my-bubbe-says">My bubbe says...</h1>

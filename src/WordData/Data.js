@@ -190,6 +190,14 @@ export const yiddishword = [
         definition: "face",
         example_sentence: "What a punim! He looks just like his father.",
         bubbe: "Gussie Ratner"
+    },
+    {
+        id: 24,
+        word: "schluffy",
+        phonetic_spelling: "sh-LUF-fee",
+        definition: "sleepy, tired, to go to sleep",
+        example_sentence: "I can't keep my eyes open any longer, this movie is making me schluffy.",
+        bubbe: "Gussie Ratner"
     }
 
 ]
