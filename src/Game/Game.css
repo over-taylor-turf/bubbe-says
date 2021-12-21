@@ -13,13 +13,13 @@
 .incorrect, .correct, .black {
     font-weight: 700;
     text-align: center;
-    font-size: min(max(25px, 5vw), 100px);
+    font-size: min(max(25px, 5vw), 60px);
 }
 
-.button-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+.game-intro {
+    font-weight: 500;
+    text-align: center;
+    font-size: min(max(15px, 4vw), 50px); 
 }
 
 .game-button1 {
@@ -39,3 +39,30 @@
     grid-row: 1 / 2;
     text-align: center;
 }
+
+
+@media only screen and (min-width: 500px) { 
+
+    .button-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 99vw;
+    }
+
+}
+
+@media only screen and (min-width: 600px) { 
+    .button-wrapper {
+        width: 80vw;
+    }
+
+}
+
+@media only screen and (min-width: 750px) { 
+    .button-wrapper {
+        width: 60vw;
+    }
+
+}
+
