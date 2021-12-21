@@ -53,7 +53,7 @@ const Menu = ( ) => {
         <div className="hamburger-menu">
 
                   <span id="icon" onClick={() => {handleClick()}}>
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars">&#8595;</i>
                   </span>
 
                   {handleHamburger()}
