@@ -18,13 +18,13 @@ function About() {
             
             <div className="contact-section">
             <a href="https://www.linkedin.com/in/tayloroverturf/" target="_blank" rel="noreferrer">
-                <i class="fab fa-linkedin"></i>&nbsp;LinkedIn</a><br/>
+            &#8599;&nbsp;LinkedIn</a><br/>
             <a href="https://dev.to/stackoverturf" target="_blank" rel="noreferrer">
-                <i class="fab fa-dev"></i>&nbsp;dev.to Blog</a><br/>
+            &#8599;&nbsp;dev.to Blog</a><br/>
             <a href="https://github.com/over-taylor-turf" target="_blank" rel="noreferrer">
-                <i class="fab fa-github-square"></i>&nbsp;GitHub</a><br/>
+            &#8599;&nbsp;GitHub</a><br/>
             <a href="http://www.stackoverturf.com/" target="_blank" rel="noreferrer">
-                <i class="fas fa-external-link-square-alt"></i>&nbsp;Personal Site</a>
+            &#8599;&nbsp;Personal Site</a>
             </div>
             </p>
 
