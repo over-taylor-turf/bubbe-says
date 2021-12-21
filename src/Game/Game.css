@@ -1,0 +1,41 @@
+.incorrect {
+    color: red;
+}
+
+.correct {
+    color: green;
+}
+
+.black {
+    color: gray;
+}
+
+.incorrect, .correct, .black {
+    font-weight: 700;
+    text-align: center;
+    font-size: min(max(25px, 5vw), 100px);
+}
+
+.button-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.game-button1 {
+    grid-column: 1 / 2; 
+    grid-row: 1 / 2;
+    text-align: center;
+}
+
+.game-button2 {
+    grid-column: 2 / 3; 
+    grid-row: 1 / 2;
+    text-align: center;
+}
+
+.game-button3 {
+    grid-column: 3 / 4; 
+    grid-row: 1 / 2;
+    text-align: center;
+}

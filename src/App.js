@@ -6,6 +6,7 @@ import About from './About/About';
 import Search from './Search/Search';
 import All from './All/All';
 import Submit from './Submit/Submit';
+import Game from './Game/Game';
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
             <Route path='/all' exact component={All} />
 
             <Route path='/submit' exact component={Submit} />
+
+            <Route path='/game' exact component={Game} />
 
             <Redirect to='/' />
 
