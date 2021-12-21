@@ -86,7 +86,7 @@ function Submit() {
                         value={email}
                         onChange={handleEmailChange}
                         name="email" 
-                        placeholder="bubbe@bubbe.com"/>
+                        placeholder="yenta@matchmaker.com"/>
                 <br/>
 
                 <label for="word">Proposed Word</label><br/>
@@ -94,7 +94,7 @@ function Submit() {
                         value={word} 
                         onChange={handleWordChange}
                         name="word" 
-                        placeholder="schvitz"/>
+                        placeholder="nosh"/>
                 <br/>
 
                 <label for="definition">Definition</label><br/>
@@ -102,7 +102,7 @@ function Submit() {
                           name="definition" 
                           value={definition} 
                           onChange={handleDefinitionChange}
-                          placeholder="Sweating profusely."/>
+                          placeholder="to snack, or a snack"/>
                 <br/>
 
                 <label for="example">Example Sentence</label><br/>
@@ -111,7 +111,7 @@ function Submit() {
                             name="example"
                             value={example}
                             onChange={handleExampleChange} 
-                            placeholder="I was schvitzing so bad it looked like I dumped a bucket of water over my head."/>
+                            placeholder="Those  Greenburgs never serve enough food, let's have a little nosh before we go."/>
                 <br/>
 
                 <label for="bubbe">Your Bubbe's Name</label><br/>

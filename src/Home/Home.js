@@ -14,7 +14,7 @@ function Home() {
       }, 5000)
 
     // Random Number Variables
-    const random = Math.floor(Math.random() * 23)
+    const random = Math.floor(Math.random() * 25)
 
     return (
         <>
