@@ -9,14 +9,17 @@ const creds = require('../client_secret.json');
 let doc = {};
 
 function Submit() {
+  
+// Form Sections, Use State
     const [email, setEmail] = useState("");
     const [word, setWord] = useState("");
     const [definition, setDefinition] = useState("");
     const [example, setExample] = useState("");
     const [bubbe, setBubbe] = useState("");
     const [buttonText, setButtonText] = useState('Submit')
+    const [optionalText, setOptionalText] = useState('')
 
-
+// API Call to Spreadsheet
   const makeInitialCall = async () => {
     doc = new GoogleSpreadsheet('184Y9hyAfhOfMntOM5hVK8zd0MbZt9PkIgL9PKs3adkk')
         await doc.useServiceAccountAuth(creds)
@@ -30,6 +33,7 @@ function Submit() {
     makeInitialCall()
   }, [])
 
+  // Form Sections, Handle Change Functions
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
@@ -50,9 +54,11 @@ function Submit() {
     setBubbe(e.target.value);
   };
 
+  // Handle Submit to Google Spreadsheet
   const handleSubmit = async (event) => {
     event.preventDefault()
-    setButtonText('Thank you!')
+    setOptionalText('A sheynem dank for your submission. We hope to feature it on My Bubbe Says soon.')
+    setButtonText('A sheynem dank!')
     let newRow = {
       email: email,
       word: word,
@@ -111,7 +117,7 @@ function Submit() {
                             name="example"
                             value={example}
                             onChange={handleExampleChange} 
-                            placeholder="Those  Greenburgs never serve enough food, let's have a little nosh before we go."/>
+                            placeholder="Those Greenburgs never serve enough food, let's have a little nosh before we go."/>
                 <br/>
 
                 <label for="bubbe">Your Bubbe's Name</label><br/>
@@ -123,6 +129,7 @@ function Submit() {
                 <br/>
             </form>
             <button onClick={handleSubmit}>{buttonText}</button>
+            <p className="optional">{optionalText}</p>
             </div>
 
             <Footer/>

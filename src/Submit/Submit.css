@@ -26,6 +26,15 @@ textarea:hover, input:hover {
     margin-top: 10vh;
 }
 
+.optional, label {
+    margin-left: 5px;
+    font-size: min(max(6px, 3vw), 20px);
+}
+
+.optional {
+    text-align: center;
+}
+
 .submit-subtitle {
     font-size: 2.5vh;
     padding: 0 5px 0 5px;
@@ -55,7 +64,7 @@ button:hover {
         padding: 2px;
         margin: 5px;
         border: 1px solid black;
-        width: 60vw;
+        width: 50vw;
     }
 
     .submit-title, .submit-subtitle {
