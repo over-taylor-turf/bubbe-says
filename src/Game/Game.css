@@ -21,6 +21,7 @@
     text-align: center;
     font-size: min(max(15px, 4vw), 50px); 
     width: 90vw;
+    margin-left: 5px;
 }
 
 .game-button1 {
