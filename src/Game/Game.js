@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // import { Link } from "react-router-dom";
 import '../App.css';
 import './Game.css'
@@ -11,14 +11,16 @@ function Game() {
     const random1 = Math.floor(Math.random() * 23)
     const random2 = (random1 + 1)
     const random3 = (random1 + 2)
+    const headsortails = Math.floor(Math.random() * 3);
 
     const [result, setResult] = useState();  
-    const [color, setColor] = useState('black');  
+    const [color, setColor] = useState('black');
+    const [randomOrder, setRandomOrder] = useState(0);  
 
     const handleCorrectGuess = () => {
         setResult('Mazel Tov!')
         setColor('correct')
-        letsGo();
+        gameLogic();
       }
     
       const handleWrongGuess = () => {
@@ -26,10 +28,19 @@ function Game() {
         setColor('incorrect')
       }
 
-    const letsGo = () => {
-        const headsortails = Math.floor(Math.random() * 3);
-        console.log(headsortails);
-        if (headsortails === 0) {
+    useEffect(() => {
+        setRandomOrder(headsortails);
+    }, [])
+
+    // const randomOrder = () => {
+    //     const headsortails = Math.floor(Math.random() * 3);
+    //     return headsortails;
+    // }
+
+    const gameLogic = () => {
+        // const headsortails = Math.floor(Math.random() * 3);
+        // console.log(headsortails);
+        if (randomOrder === 0) {
             return(
                 <>
                 <h2 className="game-intro">The Yiddish word for: "<span className="emphasized">{yiddishword[random2].definition}</span>."</h2>
@@ -45,7 +56,7 @@ function Game() {
                 </div>
                 </>
             )
-        } else if (headsortails === 1) {
+        } else if (randomOrder === 1) {
             return(
                 <>
                 <h2 className="game-intro">The Yiddish word for: "<span className="emphasized">{yiddishword[random2].definition}</span>."</h2>
@@ -87,12 +98,13 @@ function Game() {
             <>
 
                 <Menu/>
+
                 <h1>Test your Yiddish Knowledge</h1>
                 <br />
                 <br />
-                <p>{letsGo()}</p>
-                <p className={color}>{result ? result : 'Take a guess.'}</p>
-
+                {/* <button onClick={() => letsGo()}>Let's go!</button> */}
+                <p>{gameLogic()}</p>
+                <p className={color}>{result}</p>
 
                 <Footer/>
 

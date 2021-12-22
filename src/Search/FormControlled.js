@@ -6,6 +6,14 @@ const FormControlled = (props) => {
   const [searchState, setSearchState] = useState('');
   const [displayState, setDisplayState] = useState(); 
 
+      // const handleSubmit = (event) => {
+      //   setSearchState(searchState);
+      //   console.log('The search word is: ', searchState)
+      //   let displayState = (yiddishword.filter(searchedword => searchedword.word === searchState))
+      //   console.log('The display word is: ', displayState[0].word)
+      //   setDisplayState(displayState)
+      // }
+
       const handleSubmit = (event) => {
         setSearchState(searchState);
         console.log('The search word is: ', searchState)
