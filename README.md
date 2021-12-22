@@ -9,55 +9,61 @@
 
 ## Site Structure
 
-**Landing Page** will showcase a randomized word from the database. This word will automatically refresh every 5 seconds or so. The word will display along with the definition, example sentence, and phonetic spelling. Underneath, upon scroll, a short blurb explaining the concept will appear. 
+**Landing Page** showcases a randomized word from the database. This word automatically refreshes every 5 seconds to display a new Yiddish word. The word itself displays along with the definition, example sentence, and phonetic spelling.
 
-**About Page** will showcase Taylor... and her grandmother! 
 
-**Form: Submit a Word Page** a simple form for users to submit words that their *bubbes* say/said. The form will require a user to submit the word, a definition, an example sentence, and their *bubbe's* name. The *bubbe* name is in lieu of a username, email, or individual's name and is a fun way to credit *bubbes*  around the world with their most-used Yiddish words. 
+**About Page** showcases Taylor... and her bubbe! Along with appropriate links and a "secret game" page, which is accessible at the bottom right corner in hebrew lettering: סוד שפּיל
+![about page](https://res.cloudinary.com/overturf/image/upload/v1640216254/About_Page_hhkrpq.png)
 
-**Search: Find a Word Page** a search bar will allow users to search for a Yiddish word and find it's definition, pronunciation (phonetic spelling), and an example sentence. 
+**Secret Game** a secrect Yiddish guessing game! Oy vey! Guess the correct word based on the proposed definition. 
+
 
 **Dictionary: See All Words Page** a "view all" page will allow users to browse all Yiddish words currently in the *My Bubbe Says* database.  
 
 
-## Important Functionality
-- Timed Slideshow, of randomized words from the database. (Landing Page), Post-MVP
-- Form, for a user to submit a word to be displayed, after approval, on the site. (Form Page), MVP
-- Search Bar, for a user to search for words on the site (Search Page), MVP
-- Nav Bar, for a user to navigate between pages (All Pages), Post-MVP
-- Django Database, to store all words (Back End), MVP
-- Admin Control, to control which words are approved or not (Back End), Post-MVP
+**Submit a Word Page** a simple form for users to submit words that their *bubbes* say/said. The form will require a user to submit the word, a definition, an example sentence, and their *bubbe's* name. The *bubbe* name is in lieu of a username, email, or individual's name and is a fun way to credit *bubbes*  around the world with their most-used Yiddish words. Currently connected to a Google Spreadsheet. 
+
+
+**Find a Word Page** a search bar will allow users to search for a Yiddish word and find it's definition, pronunciation (phonetic spelling), and an example sentence. 
+
+
+
+
+## Functionality
+- Timed Slideshow, of randomized words from the database. (Landing Page) ✅
+- Form, for a user to submit a word to be displayed, after approval, on the site. (Form Page), MVP ✅
+- Search Bar, for a user to search for words on the site (Search Page), MVP ✅
+- Nav Bar, for a user to navigate between pages (All Pages), MVP ✅
+- Simple Yiddish guessing game, Post-MVP ✅
+- Django Database, to store all words (Back End), Post-MVP 🛠
+- Admin Control, to control which words are approved or not (Back End), Post-MVP 🛠
 
 ## Plan
+✅ Currently:
 - Front-End: HTML, CSS, JavaScript, React App 
 
+🛠 In Progress: 
 - Back-end: Django, Python API 
-    - Models: Words, User* 
+[Back-end Repo](https://github.com/over-taylor-turf/yiddish-words) to be used in lieu of the Google Spreadsheet for the submit form (will populate "suggested words" data) and word data currently in front-end (will populate "approved words").
 
-*Note there will only be one user, which is me, Taylor, the Admin. No other users allowed.
-
-Example word model in the *My Bubbe Says* backend database. 
+Example word data in the *My Bubbe Says*: 
 ```py
-{
-  "id": 1,
-  "word": "verklempt",
-  "alternate_spelling": ["verklempt"]
-  "phonetic_spelling": "fur-clem-tuh",
-  "definition": "overwhelmed",
-  "example_sentence": "My bubbe was a little verklempt when she heard the news: her only daughter was to marry a doctor.",
-  "bubbe_author": "Gussie Ratner",
-  "approved": true 
-}
-{
-  "id": 2,
-  "word": "zadie",
-  "alternate_spelling": ["zadie", "zayde", "zaydie", "zaydeh", "zaide"]
-  "phonetic_spelling": "zay-dee",
-  "definition": "grandfather",
-  "example_sentence": "Even though Zadie can't hear very well anymore, somehow he still knows when I'm trying to steal a bite of his precious gefilte fish out of the jar.",
-  "bubbe_author": "Gussie Ratner",
-  "approved": true 
-}
+    {
+        id: 0,
+        word: "bupkis",
+        phonetic_spelling: "bup-KISS",
+        definition: "nothing, nada",
+        example_sentence: "You know how much they pay their interns? That's right, you guessed it: bupkis.",
+        bubbe: "Gussie Ratner"
+    },
+    {
+        id: 1,
+        word: "chutzpah",
+        phonetic_spelling: "HOOTS-puh",
+        definition: "confidence, audacity, nerve",
+        example_sentence: "Can you believe she had the chutzpah to show up to this bat mitzvah?",
+        bubbe: "Gussie Ratner"
+    },
 ```
 
 ## Wireframes 
