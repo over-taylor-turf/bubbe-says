@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import '../App.css';
 import './About.css';
 import Menu from '../NavBar/NavBar';
@@ -25,7 +25,9 @@ function About() {
             <i class="fab fa-github-square"></i>&nbsp;GitHub</a><br/>
             <a href="http://www.stackoverturf.com/" target="_blank" rel="noreferrer">
             <i class="fas fa-external-link-square-alt"></i>&nbsp;Personal Site</a>
+            <Link to='/game'><p className="secret-game">סוד שפּיל</p></Link>
             </div>
+
             </p>
 
             <Footer/>

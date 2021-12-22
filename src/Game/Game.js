@@ -32,9 +32,9 @@ function Game() {
         if (headsortails === 0) {
             return(
                 <>
-                <h2 className="game-intro">The Yiddish word for: "{yiddishword[random2].definition}."</h2>
+                <h2 className="game-intro">The Yiddish word for: "<span className="emphasized">{yiddishword[random2].definition}</span>."</h2>
                 <br/>
-                <p>Is it {yiddishword[random1].word}?<br/>
+                <p className="options">Is it {yiddishword[random1].word}?<br/>
                 Or, maybe... {yiddishword[random2].word}?<br/>
                 Perhaps even, {yiddishword[random3].word}?</p>
                 <br/>
@@ -48,9 +48,9 @@ function Game() {
         } else if (headsortails === 1) {
             return(
                 <>
-                <h2 className="game-intro">The Yiddish word for: "{yiddishword[random2].definition}."</h2>
+                <h2 className="game-intro">The Yiddish word for: "<span className="emphasized">{yiddishword[random2].definition}</span>."</h2>
                 <br/>
-                <p>Is it {yiddishword[random2].word}?<br/>
+                <p className="options">Is it {yiddishword[random2].word}?<br/>
                 Or, maybe... {yiddishword[random1].word}?<br/>
                 Perhaps even, {yiddishword[random3].word}?</p>
                 <br/>
@@ -64,9 +64,9 @@ function Game() {
         } else {
             return(
                 <>
-                <h2 className="game-intro">The Yiddish word for: "{yiddishword[random2].definition}."</h2>
+                <h2 className="game-intro">The Yiddish word for: "<span className="emphasized">{yiddishword[random2].definition}</span>."</h2>
                 <br/>
-                <p>Is it {yiddishword[random3].word}?<br/>
+                <p className="options">Is it {yiddishword[random3].word}?<br/>
                 Or, maybe... {yiddishword[random2].word}?<br/>
                 Perhaps even, {yiddishword[random1].word}?</p>
                 <br/>

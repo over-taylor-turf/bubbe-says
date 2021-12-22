@@ -43,3 +43,16 @@
 .contact-section {
     margin-bottom: 12vh;
 }
+
+.secret-game {
+text-align: right;
+margin-right: 5px;
+font-family: 'Frank Ruhl Libre', serif;
+font-weight: 700;
+color: black;
+font-size: min(max(20px, 3.75vw), 25px);
+}
+
+.secret-game:hover {
+    color: #C4C9B0;
+}
