@@ -13,15 +13,20 @@
 .incorrect, .correct, .black {
     font-weight: 700;
     text-align: center;
-    font-size: min(max(25px, 5vw), 60px);
+    font-size: min(max(20px, 4vw), 30px);
 }
 
 .game-intro {
     font-weight: 500;
     text-align: center;
-    font-size: min(max(15px, 4vw), 50px); 
+    font-size: min(max(20px, 4vw), 30px); 
     width: 90vw;
     margin-left: 5px;
+}
+
+.game-button1, .game-button2, .game-button3 {
+    font-size: min(max(12.5px, 2.5vw), 20px);
+    font-weight: 500;
 }
 
 .game-button1 {
@@ -43,8 +48,9 @@
 }
 
 .options {
-    margin-left: 15px;
+    margin-left: 20px;
     font-size: min(max(10px, 3vw), 20px); 
+    letter-spacing: 0.5px;
 }
 
 .emphasized {
