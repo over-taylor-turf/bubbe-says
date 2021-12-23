@@ -23,8 +23,8 @@ function About() {
             <i class="fab fa-dev"></i>&nbsp;dev.to Blog</a><br/>
             <a href="https://github.com/over-taylor-turf" target="_blank" rel="noreferrer">
             <i class="fab fa-github-square"></i>&nbsp;GitHub</a><br/>
-            <a href="http://www.stackoverturf.com/" target="_blank" rel="noreferrer">
-            <i class="fas fa-external-link-square-alt"></i>&nbsp;Personal Site</a>
+            <a href="https://github.com/over-taylor-turf/bubbe-says" target="_blank" rel="noreferrer">
+            <i class="fas fa-pen-square"></i>&nbsp;Read Me File</a>
             <Link to='/game'><p className="secret-game">סוד שפּיל</p></Link>
             </div>
 
